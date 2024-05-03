@@ -25,7 +25,16 @@ Having tried my hand with a basic, entirely Azure based SOC simulation, I decide
 
   ![Alert in TheHive](https://github.com/Hammad-AlQuraishi/mediumImages/blob/main/SOCAutomation/TheHive%20alerts%20showing%20up..png)
 
+  #### 4. The alert triggers an email to be sent to the SOC analyst.
 
+  ![Email app](https://github.com/Hammad-AlQuraishi/mediumImages/blob/main/SOCAutomation/Email%201.png)
+
+  The yellow node is a shuffle tool. It is responsible for base64 decoding the message of the email and outputting it to the gmail app as the app requires the message to be decoded for it to work. The email will contain brief but potent information about what alert was triggered, by whom, where, etc.
+
+  ![Email](https://github.com/Hammad-AlQuraishi/mediumImages/blob/main/SOCAutomation/Email%202.png)
+
+  From here on, the potential is endless!
+  
 ---
 
 ## Troubleshooting:
@@ -51,4 +60,9 @@ After the fix:
 
 ![TheHive debugging 2](https://github.com/Hammad-AlQuraishi/mediumImages/blob/main/SOCAutomation/TheHive%20debugging2.png)
 
+### 3. Gmail App not getting emails:
+I made a seperate article for this hiccup and how I troubleshooted it. Please check it out [here](https://medium.com/@hrehman1181/gmail-app-in-shuffle-make-it-work-a2a3698c0a0a) if interested.
 
+---
+
+Finally, I would like to appreciate MyDFIR, on whose playlist a majority of this project was based upon.
